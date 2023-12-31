@@ -1,0 +1,36 @@
+[
+  {"user": "What are my purchases?", "intent": "GetPurchases"},
+  {"user": "Show me all purchases.", "intent": "GetPurchases"},
+  {"user": "List my expenses.", "intent": "GetPurchases"},
+  {"user": "Display transactions from [January](date) to [March](date).", "intent": "GetPurchases", "entities": {"start_date": "January", "end_date": "March"}},
+  {"user": "Get expenses for [2023](year).", "intent": "GetPurchases", "entities": {"year": "2023"}},
+  {"user": "What did I spend on [Groceries](category) in [October](date)?", "intent": "GetPurchases", "entities": {"category": "Groceries", "date": "October"}},
+  {"user": "List purchases over [1000 Rs](amount).", "intent": "GetPurchases", "entities": {"amount": "1000 Rs"}},
+  
+  {"user": "I made a purchase of [50 USD](amount) on [15th January](date) for [Electronics](category).", "intent": "AddPurchase", "entities": {"amount": "50 USD", "date": "15th January", "category": "Electronics"}},
+  {"user": "Record an expense of [200 Rs](amount) on [5th February](date) for [Dinner](category).", "intent": "AddPurchase", "entities": {"amount": "200 Rs", "date": "5th February", "category": "Dinner"}},
+  {"user": "Add a purchase of [3000 INR](amount) on [20th March](date) for [Clothing](category).", "intent": "AddPurchase", "entities": {"amount": "3000 INR", "date": "20th March", "category": "Clothing"}},
+  
+  {"user": "Show me all credits.", "intent": "GetCredits"},
+  {"user": "List my income.", "intent": "GetCredits"},
+  {"user": "What credits do I have?", "intent": "GetCredits"},
+  {"user": "Display income for [2023](year).", "intent": "GetCredits", "entities": {"year": "2023"}},
+  {"user": "What is my total income from [Freelancing](source) in [April](date)?", "intent": "GetCredits", "entities": {"source": "Freelancing", "date": "April"}},
+  {"user": "Show earnings over [5000 Rs](amount).", "intent": "GetCredits", "entities": {"amount": "5000 Rs"}},
+  
+  {"user": "Received [150 USD](amount) from [Client](sender). Add it as income.", "intent": "AddCredit", "entities": {"amount": "150 USD", "sender": "Client"}},
+  {"user": "Record a credit of [8000 INR](amount) from [Job Salary](source) on [2nd February](date).", "intent": "AddCredit", "entities": {"amount": "8000 INR", "source": "Job Salary", "date": "2nd February"}},
+  {"user": "Income of [3000 Rs](amount) from [Online Sales](source) in [May](date). Add it to my earnings.", "intent": "AddCredit", "entities": {"amount": "3000 Rs", "source": "Online Sales", "date": "May"}},
+  
+  {"user": "What is my current balance?", "intent": "GetBalance"},
+  {"user": "Show me my financial balance.", "intent": "GetBalance"},
+  {"user": "Check my account balance.", "intent": "GetBalance"},
+  
+  {"user": "Transfer [500 USD](amount) from [Savings](source_account) to [Checking](destination_account).", "intent": "TransferFunds", "entities": {"amount": "500 USD", "source_account": "Savings", "destination_account": "Checking"}},
+  {"user": "Move [2000 Rs](amount) from [Checking](source_account) to [Emergency Fund](destination_account).", "intent": "TransferFunds", "entities": {"amount": "2000 Rs", "source_account": "Checking", "destination_account": "Emergency Fund"}},
+  {"user": "Transfer [100 INR](amount) from [Personal](source_account) to [Charity](destination_account).", "intent": "TransferFunds", "entities": {"amount": "100 INR", "source_account": "Personal", "destination_account": "Charity"}},
+  
+  {"user": "Categorize the expense of [400 USD](amount) on [10th March](date).", "intent": "CategorizeExpense", "entities": {"amount": "400 USD", "date": "10th March"}},
+  {"user": "Classify the income of [6000 INR](amount) from [Consulting](category) in [June](date).", "intent": "CategorizeIncome", "entities": {"amount": "6000 INR", "category": "Consulting", "date": "June"}},
+  {"user": "What are my uncategorized transactions?", "intent": "GetUncategorizedTransactions"}
+]
