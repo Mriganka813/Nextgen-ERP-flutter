@@ -33,4 +33,15 @@
   {"user": "Categorize the expense of [400 USD](amount) on [10th March](date).", "intent": "CategorizeExpense", "entities": {"amount": "400 USD", "date": "10th March"}},
   {"user": "Classify the income of [6000 INR](amount) from [Consulting](category) in [June](date).", "intent": "CategorizeIncome", "entities": {"amount": "6000 INR", "category": "Consulting", "date": "June"}},
   {"user": "What are my uncategorized transactions?", "intent": "GetUncategorizedTransactions"}
+
+
+  {"user": "What is the overall profit and loss for my business?", "intent": "GetProfitAndLoss", "entities": {}},
+  {"user": "Break down the profit and loss by [marketing expenses] for the current year.", "intent": "GetProfitAndLoss", "entities": {"category": "marketing expenses"}},
+  {"user": "Show me the profit and loss for [marketing expenses] in [2023].", "intent": "GetProfitAndLoss", "entities": {"category": "marketing expenses", "year": "2023"}},
+  {"user": "Provide the profit and loss statement for [Q3] of this year.", "intent": "GetProfitAndLoss", "entities": {"quarter": "Q3", "year": "current year"}},
+  {"user": "What were the profits and losses in [Q2] of [2022]?", "intent": "GetProfitAndLoss", "entities": {"quarter": "Q2", "year": "2022"}},
+  {"user": "Compare the profit and loss between [last year] and [this year].", "intent": "GetProfitAndLoss", "entities": {"comparison_period": "last year", "current_period": "this year"}},
+  {"user": "Show me a comparison of profit and loss for [Q4] in [2019] and [2020].", "intent": "GetProfitAndLoss", "entities": {"quarter": "Q4", "year": "2019", "comparison_year": "2020"}}
+
 ]
+
